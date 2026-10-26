@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Portfólio de Diogo Muller: projetos AWS, Cloud Computing, infraestrutura e Cloud Security."
+    >
+    <meta name="theme-color" content="#080a0f">
+
+    <title>Diogo Muller | AWS & Cloud Security</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <!-- Identidade visual: logo Cloud D -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon-180.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Rede animada decorativa; não interfere com a navegação. -->
+    <canvas id="cloudNetwork" class="cloud-network" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#conteudo">Pular para conteúdo</a>
+
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <!-- CABEÇALHO -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a class="brand" href="#inicio" aria-label="Diogo Muller, voltar ao início">
+                <img class="brand-logo" src="assets/logo-cloud-d.png" alt="" width="42" height="42">
+                <span class="brand-name">DIOGO<span class="accent">.</span> MULLER</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-controls="mainNavigation"
+                aria-expanded="false"
+                aria-label="Abrir menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navigation" id="mainNavigation" aria-label="Navegação principal">
+                <a class="nav-link active" href="#inicio">Início</a>
+                <a class="nav-link" href="#sobre">Sobre</a>
+                <a class="nav-link" href="#projetos">Projetos</a>
+                <a class="nav-link" href="#certificacoes">Certificações</a>
+                <a class="nav-link" href="#habilidades">Habilidades</a>
+                <a class="nav-link" href="#trajetoria">Trajetória</a>
+                <a class="nav-link" href="#contato">Contato</a>
+            </nav>
+
+            <a class="header-cta" href="mailto:diogomullerciber@gmail.com">
+                Vamos conversar <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <!-- INÍCIO / HERO -->
+        <section class="hero section" id="inicio" aria-labelledby="heroTitle">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <div class="eyebrow">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        AWS <span class="eyebrow-separator">/</span>
+                        CLOUD <span class="eyebrow-separator">/</span>
+                        SECURITY
+                    </div>
+
+                    <p class="hero-intro">Olá, eu sou <strong>Diogo Muller</strong></p>
+                    <h1 id="heroTitle">
+                        Construindo<br>
+                        soluções para<br>
+                        <span class="gradient-text">o futuro.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Engenheiro de Software com experiência em infraestrutura
+                        de TI e foco em Cloud Computing, AWS e Cloud Security.
+                        Transformo aprendizado técnico em projetos práticos.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projetos">
+                            Explorar projetos <span aria-hidden="true">↗</span>
+                        </a>
+                        <a
+                            class="button button-secondary"
+                            href="assets/Diogo_Muller_CV.pdf"
+                            download
+                        >
+                            ↓ Baixar currículo
+                        </a>
+                    </div>
+
+                    <div class="hero-socials" aria-label="Perfis profissionais">
+                        <a
+                            href="https://github.com/DiogoMulller"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >GitHub ↗</a>
+                        <span aria-hidden="true">/</span>
+                        <a
+                            href="https://www.linkedin.com/in/diogo-muller-2109ba344/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >LinkedIn ↗</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal" aria-label="Ilustração de arquitetura cloud com serviços AWS">
+                    <div class="visual-orbit orbit-one" aria-hidden="true"></div>
+                    <div class="visual-orbit orbit-two" aria-hidden="true"></div>
+                    <div class="visual-grid" aria-hidden="true"></div>
+                    <img
+                        class="architecture-art"
+                        src="assets/cloud-architecture.svg"
+                        alt="Ilustração isométrica de uma infraestrutura cloud com servidores, armazenamento, rede e segurança"
+                        width="680"
+                        height="580"
+                    >
+                    <div class="visual-label visual-label-top">
+                        <span class="label-led"></span>
+                        CLOUD ARCHITECTURE
+                    </div>
+                    <div class="visual-label visual-label-bottom">SECURE BY DESIGN <span>↗</span></div>
+                </div>
+            </div>
+
+            <div class="container hero-bottom">
+                <span>01 / PORTFÓLIO PESSOAL</span>
+                <a href="#sobre">ROLE PARA EXPLORAR <span aria-hidden="true">↓</span></a>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section class="section section-spaced" id="sobre" aria-labelledby="aboutTitle">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="section-kicker">01 — SOBRE MIM</p>
+                        <h2 id="aboutTitle">Tecnologia com <span class="accent">propósito.</span></h2>
+                    </div>
+                    <p>Minha trajetória e o que estou construindo agora.</p>
+                </div>
+
+                <div class="about-layout">
+                    <article class="panel about-card reveal">
+                        <span class="card-corner">↗</span>
+                        <p class="about-lead">
+                            Sou formado em <strong>Engenharia de Software</strong> e
+                            estou direcionando minha carreira para
+                            <strong>AWS e Cloud Security.</strong>
+                        </p>
+                        <p>
+                            Tenho 1 ano e 6 meses de experiência profissional em
+                            suporte, redes e infraestrutura de TI. Atualmente,
+                            desenvolvo laboratórios AWS para aprofundar conhecimentos
+                            em armazenamento, controle de acesso, recuperação de dados
+                            e boas práticas de segurança.
+                        </p>
+                        <p>
+                            Busco oportunidades em Cloud, infraestrutura AWS e
+                            segurança em nuvem, unindo fundamentos sólidos à prática.
+                        </p>
+                    </article>
+
+                    <div class="about-facts reveal">
+                        <div class="fact panel">
+                            <span class="fact-number">01</span>
+                            <div>
+                                <h3>Formação</h3>
+                                <p>Bacharelado em Engenharia de Software · UNOPAR · 2026</p>
+                            </div>
+                        </div>
+                        <div class="fact panel">
+                            <span class="fact-number">02</span>
+                            <div>
+                                <h3>Experiência</h3>
+                                <p>1 ano e 6 meses em suporte, redes e infraestrutura de TI</p>
+                            </div>
+                        </div>
+                        <div class="fact panel">
+                            <span class="fact-number">03</span>
+                            <div>
+                                <h3>Direção profissional</h3>
+                                <p>Cloud Computing · AWS · Cloud Security</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section class="section section-spaced projects-section" id="projetos" aria-labelledby="projectsTitle">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="section-kicker">02 — PORTFÓLIO NO GITHUB</p>
+                        <h2 id="projectsTitle">Projetos em <span class="accent">destaque.</span></h2>
+                    </div>
+                    <p>Quatro repositórios públicos: AWS, segurança de redes e desenvolvimento.</p>
+                </div>
+
+                <div class="project-filters reveal" role="group" aria-label="Filtrar projetos">
+                    <button class="filter-button selected" data-filter="todos" type="button" aria-pressed="true">Todos</button>
+                    <button class="filter-button" data-filter="seguranca" type="button" aria-pressed="false">Segurança</button>
+                    <button class="filter-button" data-filter="infraestrutura" type="button" aria-pressed="false">Infraestrutura</button>
+                    <button class="filter-button" data-filter="desenvolvimento" type="button" aria-pressed="false">Desenvolvimento</button>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+                    <article class="project-card panel reveal" data-category="seguranca">
+                        <div class="project-visual project-cover project-cover-aws-security">
+                            <div class="project-cover-core" aria-hidden="true">
+                                <span class="project-core-panel project-icon-shield-user">
+                                    <svg class="project-icon-svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+                                        <path d="M50 12 L79 24 V47 C79 66 67 82 50 88 C33 82 21 66 21 47 V24 Z"></path>
+                                        <circle cx="50" cy="41" r="10"></circle>
+                                        <path d="M35 63 C39 54 61 54 65 63"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="project-cover-footer">
+                                <span class="project-software-badge">
+                                    <img src="assets/icons/aws.svg" alt="" width="30" height="30" loading="lazy">
+                                    <span>AWS</span>
+                                </span>
+                                <span class="project-topic">Cloud Security</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-title-row">
+                                <h3>AWS IAM &amp; S3 Security Lab</h3>
+                            </div>
+                            <p>Laboratório de Cloud Security com IAM, Amazon S3, MFA, menor privilégio, validação de políticas e auditoria de acessos.</p>
+                            <div class="tag-list">
+                                <span>AWS</span>
+                                <span>IAM</span>
+                                <span>S3</span>
+                                <span>MFA</span>
+                            </div>
+                            <a
+                                class="card-link"
+                                href="https://github.com/DiogoMulller/AWS-IAM-S3-Security-Lab"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Ver repositório no GitHub <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card panel reveal" data-category="infraestrutura">
+                        <div class="project-visual project-cover project-cover-aws-infra">
+                            <div class="project-cover-core" aria-hidden="true">
+                                <span class="project-core-panel project-icon-storage">
+                                    <svg class="project-icon-svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+                                        <ellipse cx="50" cy="29" rx="21" ry="8"></ellipse>
+                                        <path d="M29 29 V43 C29 47 38 51 50 51 C62 51 71 47 71 43 V29"></path>
+                                        <ellipse cx="50" cy="51" rx="21" ry="8"></ellipse>
+                                        <path d="M29 51 V65 C29 69 38 73 50 73 C62 73 71 69 71 65 V51"></path>
+                                        <ellipse cx="50" cy="73" rx="21" ry="8"></ellipse>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="project-cover-footer">
+                                <span class="project-software-badge">
+                                    <img src="assets/icons/aws.svg" alt="" width="30" height="30" loading="lazy">
+                                    <span>AWS</span>
+                                </span>
+                                <span class="project-topic">Backup &amp; Recovery</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-title-row">
+                                <h3>AWS EBS Backup &amp; Recovery Lab</h3>
+                            </div>
+                            <p>Laboratório de backup e recuperação com EC2, EBS criptografado, snapshots, Linux e verificação de integridade SHA-256.</p>
+                            <div class="tag-list">
+                                <span>AWS</span>
+                                <span>EC2</span>
+                                <span>EBS</span>
+                                <span>Linux</span>
+                            </div>
+                            <a
+                                class="card-link"
+                                href="https://github.com/DiogoMulller/AWS-EBS-Backup-Recovery-Lab"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Ver repositório no GitHub <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card panel reveal" data-category="seguranca">
+                        <div class="project-visual project-cover project-cover-wireless">
+                            <div class="project-cover-core" aria-hidden="true">
+                                <span class="project-core-panel project-icon-wifi">
+                                    <svg class="project-icon-svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+                                        <path d="M25 45 C39 31 61 31 75 45"></path>
+                                        <path d="M34 57 C44 47 56 47 66 57"></path>
+                                        <path d="M43 68 C47 64 53 64 57 68"></path>
+                                        <circle cx="50" cy="76" r="3.8" class="fill-dot"></circle>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="project-cover-footer">
+                                <span class="project-software-badge">
+                                    <img src="assets/icons/wireless.svg" alt="" width="30" height="30" loading="lazy">
+                                    <span>Wireless</span>
+                                </span>
+                                <span class="project-topic">Wireless Security</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-title-row">
+                                <h3>Wireless Security Lab</h3>
+                            </div>
+                            <p>Estudos práticos de segurança Wi-Fi em laboratório controlado e autorizado, com reconhecimento, análise de tráfego e documentação técnica.</p>
+                            <div class="tag-list">
+                                <span>Wi-Fi</span>
+                                <span>Wireshark</span>
+                                <span>Nmap</span>
+                                <span>Kali Linux</span>
+                            </div>
+                            <a
+                                class="card-link"
+                                href="https://github.com/DiogoMulller/Wireless-Security-Lab"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Ver repositório no GitHub <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card panel reveal" data-category="desenvolvimento">
+                        <div class="project-visual project-cover project-cover-python">
+                            <div class="project-cover-core" aria-hidden="true">
+                                <span class="project-core-panel project-icon-addressbook">
+                                    <svg class="project-icon-svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+                                        <rect x="28" y="17" width="44" height="66" rx="9" ry="9"></rect>
+                                        <line x1="36" y1="24" x2="36" y2="76"></line>
+                                        <line x1="28" y1="31" x2="20" y2="31"></line>
+                                        <line x1="28" y1="44" x2="20" y2="44"></line>
+                                        <line x1="28" y1="57" x2="20" y2="57"></line>
+                                        <circle cx="53" cy="43" r="8"></circle>
+                                        <path d="M43 64 C46 57 60 57 63 64"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="project-cover-footer">
+                                <span class="project-software-badge">
+                                    <img src="assets/icons/python.svg" alt="" width="30" height="30" loading="lazy">
+                                    <span>Python</span>
+                                </span>
+                                <span class="project-topic">Python Development</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-title-row">
+                                <h3>Agenda de Contatos — Python</h3>
+                            </div>
+                            <p>Projeto de agenda de contatos desenvolvido em Python durante o curso de Pentesting da Solyd.</p>
+                            <div class="tag-list">
+                                <span>Python</span>
+                                <span>Programação</span>
+                                <span>Agenda</span>
+                            </div>
+                            <a
+                                class="card-link"
+                                href="https://github.com/DiogoMulller/agenda_de_contatos-python"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Ver repositório no GitHub <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="empty-projects" id="emptyProjects" hidden>Nenhum projeto encontrado nessa categoria.</p>
+                <p class="projects-github-link reveal">
+                    <a href="https://github.com/DiogoMulller?tab=repositories" target="_blank" rel="noopener noreferrer">Ver todos os repositórios no GitHub ↗</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- CERTIFICAÇÕES -->
+        <section class="section section-spaced" id="certificacoes" aria-labelledby="certTitle">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="section-kicker">03 — APRENDIZADO CONTÍNUO</p>
+                        <h2 id="certTitle">Certificações <span class="accent">& cursos.</span></h2>
+                    </div>
+                    <p>Histórico de cursos e credenciais conforme meu LinkedIn, com datas e códigos disponíveis.</p>
+                </div>
+
+                <p class="credentials-count" id="credentialsCount">Exibindo 4 destaques de 25 credenciais e cursos.</p>
+                <div class="cert-grid" id="credentialsGrid">
+                    <article class="cert-card panel reveal credential-item">
+                        <div class="cert-mark">
+                            <img src="assets/icons/aws.svg" alt="Identificação de Amazon Web Services (AWS)" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Amazon Web Services (AWS)</span>
+                            <h3>AWS Cloud Practitioner Essentials</h3>
+                            <p>Emitida em out. 2026</p>
+                            <p class="credential-code">Código: <span>YOYU8B4V66NI</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item">
+                        <div class="cert-mark">
+                            <img src="assets/icons/google.svg" alt="Identificação de Google" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Google</span>
+                            <h3>Certificado Profissional de Google Cybersecurity</h3>
+                            <p>Emitida em set. 2026</p>
+                            <p class="credential-code">Código: <span>5S0RCCKHK8D9</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/google.svg" alt="Identificação de Google" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Google</span>
+                            <h3>Put It to Work: Prepare for Cybersecurity Jobs</h3>
+                            <p>Emitida em set. 2026</p>
+                            <p class="credential-code">Código: <span>K11GURTEGQPG</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/google.svg" alt="Identificação de Google" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Google</span>
+                            <h3>Automate Cybersecurity Tasks with Python</h3>
+                            <p>Emitida em ago. 2026</p>
+                            <p class="credential-code">Código: <span>3SB6U7NCSMMH</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/google.svg" alt="Identificação de Google" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Google</span>
+                            <h3>Sound the Alarm: Detection and Response</h3>
+                            <p>Emitida em ago. 2026</p>
+                            <p class="credential-code">Código: <span>W9617KCBSP4K</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/google.svg" alt="Identificação de Google" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Google</span>
+                            <h3>Assets, Threats, and Vulnerabilities</h3>
+                            <p>Emitida em fev. 2026</p>
+                            <p class="credential-code">Código: <span>PPF3HCDRJSFE</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/ibsec.svg" alt="Identificação de IBSEC" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">IBSEC</span>
+                            <h3>Certificação Fundamentos em Cibersegurança</h3>
+                            <p>Emitida em dez. 2025 · Expira em dez. 2028</p>
+                            <p class="credential-code">Código: <span>#7ef42756539d28e4</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/ibsec.svg" alt="Identificação de IBSEC" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">IBSEC</span>
+                            <h3>Boas Práticas de Cibersegurança (Cybersecurity Awareness)</h3>
+                            <p>Emitida em dez. 2025 · Expira em dez. 2028</p>
+                            <p class="credential-code">Código: <span>IC-SEC-1783</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/google.svg" alt="Identificação de Google" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Google</span>
+                            <h3>Ferramentas do ofício: Linux e SQL</h3>
+                            <p>Emitida em set. 2025</p>
+                            <p class="credential-code">Código: <span>GJL4CSNL3018</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/google.svg" alt="Identificação de Google" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Google</span>
+                            <h3>Connect and Protect: Networks and Network Security</h3>
+                            <p>Emitida em jul. 2025</p>
+                            <p class="credential-code">Código: <span>4GTKZGJ2W18C</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/google.svg" alt="Identificação de Google" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Google</span>
+                            <h3>Play It Safe: Manage Security Risks</h3>
+                            <p>Emitida em mai. 2025</p>
+                            <p class="credential-code">Código: <span>CS1S898035MZ</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/fortinet.svg" alt="Identificação de Fortinet" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Fortinet</span>
+                            <h3>FCF - Introduction to the Threat Landscape 3.0</h3>
+                            <p>Emitida em mai. 2025</p>
+                            
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item">
+                        <div class="cert-mark">
+                            <img src="assets/icons/fortinet.svg" alt="Identificação de Fortinet" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Fortinet</span>
+                            <h3>Fortinet Certified Fundamentals in Cybersecurity</h3>
+                            <p>Emitida em mai. 2025</p>
+                            <p class="credential-code">Código: <span>5082326867DM</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/fortinet.svg" alt="Identificação de Fortinet" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Fortinet</span>
+                            <h3>FCF - Getting Started in Cybersecurity 3.0</h3>
+                            <p>Emitida em mai. 2025</p>
+                            
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/google.svg" alt="Identificação de Google" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Google</span>
+                            <h3>Foundations of Cybersecurity</h3>
+                            <p>Emitida em mai. 2025</p>
+                            <p class="credential-code">Código: <span>JFYQF6NEHT1A</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/ibsec.svg" alt="Identificação de IBSEC" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">IBSEC</span>
+                            <h3>Análise de Tráfego de Rede</h3>
+                            <p>Emitida em dez. 2024</p>
+                            
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/senai.svg" alt="Identificação de Senai São Paulo" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Senai São Paulo</span>
+                            <h3>Hackers do Bem - Básico</h3>
+                            <p>Emitida em mar. 2024</p>
+                            
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/senai.svg" alt="Identificação de Senai São Paulo" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Senai São Paulo</span>
+                            <h3>Hackers do Bem - Nivelamento</h3>
+                            <p>Emitida em jan. 2024</p>
+                            
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/curso-em-video.svg" alt="Identificação de Curso em Vídeo" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Curso em Vídeo</span>
+                            <h3>HTML e CSS</h3>
+                            <p>Emitida em out. 2022</p>
+                            
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/onebitcode.svg" alt="Identificação de OneBitCode" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">OneBitCode</span>
+                            <h3>CSS3</h3>
+                            <p>Emitida em mar. 2023</p>
+                            
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/onebitcode.svg" alt="Identificação de OneBitCode" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">OneBitCode</span>
+                            <h3>HTML5</h3>
+                            <p>Emitida em jan. 2023</p>
+                            
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item">
+                        <div class="cert-mark">
+                            <img src="assets/icons/cisco.svg" alt="Identificação de Cisco Networking Academy" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">Cisco Networking Academy</span>
+                            <h3>Introduction to Cibersecurity</h3>
+                            <p>Emitida em jan. 2025</p>
+                            
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/dio.svg" alt="Identificação de DIO" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">DIO</span>
+                            <h3>Princípios da Cibersegurança</h3>
+                            <p>Emitida em jan. 2025</p>
+                            <p class="credential-code">Código: <span>X1SSQZQU</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/dio.svg" alt="Identificação de DIO" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">DIO</span>
+                            <h3>Conceitos e Práticas de SO e VM</h3>
+                            <p>Emitida em jan. 2025</p>
+                            <p class="credential-code">Código: <span>ARHJ65ZC</span></p>
+                        </div>
+                    </article>
+
+                    <article class="cert-card panel reveal credential-item" hidden data-extra-credential>
+                        <div class="cert-mark">
+                            <img src="assets/icons/dio.svg" alt="Identificação de DIO" width="45" height="45" loading="lazy">
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-provider">DIO</span>
+                            <h3>Fundamentos de Rede de Computadores</h3>
+                            <p>Emitida em jan. 2025</p>
+                            <p class="credential-code">Código: <span>AFIHHEIR</span></p>
+                        </div>
+                    </article>
+                </div>
+                <div class="credentials-actions">
+                    <button type="button" class="credentials-toggle" id="credentialsToggle" aria-expanded="false" aria-controls="credentialsGrid">
+                        Mostrar todas as 25 credenciais
+                    </button>
+                </div>
+
+                <a
+                    class="text-link credentials-link"
+                    href="https://www.linkedin.com/in/diogo-muller-2109ba344/details/certifications/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Consultar credenciais no LinkedIn ↗
+                </a>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section class="section section-spaced" id="habilidades" aria-labelledby="skillsTitle">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="section-kicker">04 — STACK TÉCNICA</p>
+                        <h2 id="skillsTitle">Ferramentas & <span class="accent">habilidades.</span></h2>
+                    </div>
+                    <p>Tecnologias que utilizo em estudos e projetos práticos.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-panel panel reveal">
+                        <div class="skill-heading"><span>◇</span><h3>AWS & Cloud</h3></div>
+                        <div class="skill-tags">
+                            <span>IAM</span><span>Amazon S3</span><span>EC2</span>
+                            <span>EBS</span><span>Snapshots</span><span>VPC (fundamentos)</span>
+                        </div>
+                    </article>
+                    <article class="skill-panel panel reveal">
+                        <div class="skill-heading"><span>⌘</span><h3>Infraestrutura & Redes</h3></div>
+                        <div class="skill-tags">
+                            <span>Linux</span><span>Windows</span><span>TCP/IP</span>
+                            <span>DNS</span><span>DHCP</span><span>HTTP/HTTPS</span><span>VPN</span>
+                        </div>
+                    </article>
+                    <article class="skill-panel panel reveal">
+                        <div class="skill-heading"><span>⬡</span><h3>Cloud Security</h3></div>
+                        <div class="skill-tags">
+                            <span>Menor privilégio</span><span>Controle de acesso</span>
+                            <span>Análise de logs</span><span>Wireshark</span>
+                        </div>
+                    </article>
+                    <article class="skill-panel panel reveal">
+                        <div class="skill-heading"><span>&lt;/&gt;</span><h3>Desenvolvimento & Ferramentas</h3></div>
+                        <div class="skill-tags">
+                            <span>Git</span><span>GitHub</span><span>Python (fundamentos)</span>
+                            <span>Bash (fundamentos)</span><span>HTML</span>
+                            <span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAJETÓRIA: formação acadêmica e experiência profissional -->
+        <section
+            class="section section-spaced"
+            id="trajetoria"
+            aria-labelledby="journeyTitle"
+        >
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="section-kicker">05 — MINHA TRAJETÓRIA</p>
+                        <h2 id="journeyTitle">
+                            Formação & <span class="accent">experiência.</span>
+                        </h2>
+                    </div>
+                    <p>Minha evolução acadêmica e profissional, em uma única linha do tempo.</p>
+                </div>
+
+                <ol class="journey-timeline">
+                    <li class="journey-entry reveal">
+                        <div class="journey-dot" aria-hidden="true"></div>
+                        <article class="journey-card panel">
+                            <div class="journey-meta">
+                                <span class="journey-date">JAN 2022 — MAI 2026</span>
+                                <span class="journey-kind">Formação acadêmica</span>
+                            </div>
+                            <h3>Bacharelado em Engenharia de Software</h3>
+                            <p class="experience-company">UNOPAR</p>
+                            <p>
+                                Graduação concluída em 2026, com fundamentos
+                                de desenvolvimento de software e tecnologia.
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class="journey-entry reveal">
+                        <div class="journey-dot" aria-hidden="true"></div>
+                        <article class="journey-card panel">
+                            <div class="journey-meta">
+                                <span class="journey-date">OUT 2024 — ABR 2026</span>
+                                <span class="journey-kind">Experiência profissional</span>
+                            </div>
+                            <h3>Instrutor de Informática / Suporte e Infraestrutura de TI</h3>
+                            <p class="experience-company">
+                                Secretaria de Educação · Itabirito, MG
+                            </p>
+                            <p>
+                                Suporte a redes e estações de trabalho,
+                                instalação e configuração de equipamentos,
+                                diagnóstico de conectividade e manutenção
+                                de recursos tecnológicos.
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class="journey-entry reveal">
+                        <div class="journey-dot" aria-hidden="true"></div>
+                        <article class="journey-card panel">
+                            <div class="journey-meta">
+                                <span class="journey-date">2026 — ATUALMENTE</span>
+                                <span class="journey-kind">Projetos e especialização</span>
+                            </div>
+                            <h3>AWS, Cloud Computing e Cloud Security</h3>
+                            <p class="experience-company">Laboratórios pessoais</p>
+                            <p>
+                                Aprimoramento técnico por meio de projetos
+                                documentados em IAM, S3, EC2 e EBS,
+                                com foco em segurança e infraestrutura cloud.
+                            </p>
+                        </article>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="section section-spaced" id="contato" aria-labelledby="contactTitle">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <span class="section-kicker">06 — CONTATO</span>
+                    <h2 id="contactTitle">Vamos construir algo <span class="gradient-text">incrível?</span></h2>
+                    <p>
+                        Estou aberto a oportunidades em AWS, Cloud Computing,
+                        infraestrutura e Cloud Security. Vamos conversar?
+                    </p>
+
+                    <div class="contact-actions">
+                        <a class="button button-primary" href="mailto:diogomullerciber@gmail.com">
+                            Enviar e-mail <span aria-hidden="true">↗</span>
+                        </a>
+                        <a
+                            class="button button-secondary"
+                            href="https://www.linkedin.com/in/diogo-muller-2109ba344/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >LinkedIn ↗</a>
+                        <a
+                            class="button button-secondary"
+                            href="https://github.com/DiogoMulller"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >GitHub ↗</a>
+                    </div>
+
+                    <button
+                        class="copy-email"
+                        id="copyEmail"
+                        type="button"
+                        aria-live="polite"
+                    >
+                        diogomullerciber@gmail.com <span aria-hidden="true">⧉</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand" href="#inicio"><img class="brand-logo" src="assets/logo-cloud-d.png" alt="" width="42" height="42"><span>DIOGO<span class="accent">.</span> MULLER</span></a>
+            <p>© <span id="currentYear">2026</span> Diogo Muller. Feito com HTML, CSS e JavaScript.</p>
+            <a href="#inicio">Voltar ao topo ↑</a>
+        </div>
+    </footer>
+</body>
+</html>

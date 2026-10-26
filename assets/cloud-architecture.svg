@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 580" role="img" aria-labelledby="title desc">
+  <title id="title">Arquitetura cloud isométrica</title>
+  <desc id="desc">Camadas de computação, rede, armazenamento e segurança interligadas em uma estrutura de nuvem.</desc>
+  <defs>
+    <linearGradient id="top" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#354256"/><stop offset="1" stop-color="#151c2b"/></linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#151d2c"/><stop offset="1" stop-color="#090d16"/></linearGradient>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff5ba0"/><stop offset="1" stop-color="#f90362"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5bb6ed"/><stop offset="1" stop-color="#2b4e8d"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000" flood-opacity="0.75"/></filter>
+  </defs>
+  <g opacity="0.55" fill="none" stroke="#f90362" stroke-width="1.2" stroke-dasharray="5 10">
+    <ellipse cx="335" cy="380" rx="285" ry="118"/>
+    <ellipse cx="335" cy="385" rx="225" ry="90"/>
+  </g>
+  <g opacity="0.75"><circle cx="100" cy="200" r="3" fill="#f90362"/><circle cx="579" cy="281" r="4" fill="#ff5ba0"/><circle cx="215" cy="105" r="2" fill="#67b5ff"/><circle cx="525" cy="105" r="2" fill="#ff5ba0"/></g>
+  <!-- Base isométrica -->
+  <g filter="url(#shadow)">
+    <path d="M337 208 590 339 339 470 90 338Z" fill="url(#top)" stroke="#6f7a98" stroke-opacity="0.65" stroke-width="2"/>
+    <path d="M90 338 339 470 339 500 90 369Z" fill="url(#front)" stroke="#5d6885" stroke-opacity="0.5"/>
+    <path d="M339 470 590 339 590 369 339 500Z" fill="#0a0d17" stroke="#5d6885" stroke-opacity="0.6"/>
+    <path d="M128 339 337 230 552 339 339 451Z" fill="none" stroke="#f90362" stroke-opacity="0.42" stroke-width="2"/>
+    <path d="M160 340 338 246 520 340 338 434Z" fill="none" stroke="#6b7d9f" stroke-opacity="0.26"/>
+  </g>
+  <!-- Connection traces -->
+  <g fill="none" stroke="#ff4d91" stroke-width="3" opacity="0.9">
+    <path d="M334 321 223 381 168 352"/>
+    <path d="M340 322 460 381 513 352"/>
+    <path d="M340 321 337 412"/>
+  </g>
+  <g fill="#ff4d91"><circle cx="223" cy="381" r="5"/><circle cx="460" cy="381" r="5"/><circle cx="337" cy="412" r="5"/></g>
+  <!-- Left: storage -->
+  <g filter="url(#shadow)">
+    <path d="m162 307 61-32 62 32-62 33Z" fill="#4f5b77" stroke="#8896af"/>
+    <path d="m162 307 61 33v71l-61-32Z" fill="#131b2c" stroke="#667697"/>
+    <path d="m223 340 62-33v71l-62 33Z" fill="#0b101b" stroke="#667697"/>
+    <path d="m174 338 35 19m-35-5 35 19m-35-5 35 19" stroke="#f90362" stroke-width="4" stroke-linecap="round"/>
+    <text x="224" y="372" fill="#ffc1d8" font-family="Arial,sans-serif" font-weight="700" font-size="16" transform="skewY(-26)">S3</text>
+  </g>
+  <!-- Right: compute -->
+  <g filter="url(#shadow)">
+    <path d="m416 307 58-30 60 31-59 30Z" fill="#4e5e7b" stroke="#a1abc0"/>
+    <path d="m416 307 59 31v75l-59-32Z" fill="#192337" stroke="#687b9a"/>
+    <path d="m475 338 59-30v73l-59 32Z" fill="#0e1525" stroke="#687b9a"/>
+    <path d="m427 342 35 19m-35-6 35 19m-35-6 35 19" stroke="#62b5f8" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="492" cy="367" r="5" fill="#f90362"/><circle cx="509" cy="358" r="5" fill="#62b5f8"/>
+  </g>
+  <!-- Center: central cloud node -->
+  <g filter="url(#shadow)">
+    <path d="m267 256 68-35 72 38-72 36Z" fill="#5a3557" stroke="#ff6ba6" stroke-width="2"/>
+    <path d="m267 256 68 39v85l-68-38Z" fill="#25142a" stroke="#fb3a88" stroke-width="2"/>
+    <path d="m335 295 72-36v85l-72 36Z" fill="#130f20" stroke="#fb3a88" stroke-width="2"/>
+    <path d="m335 294 v85" stroke="#ff7ab5" stroke-width="3"/>
+    <circle cx="335" cy="262" r="25" fill="#f90362" opacity="0.25" filter="url(#glow)"/>
+    <path d="M318 265a19 19 0 0 1 35-8 14 14 0 0 1-1 28h-33a11 11 0 0 1-1-20Z" fill="url(#pink)" stroke="#ffd0e2" stroke-width="2"/>
+  </g>
+  <!-- Firewall shield floating -->
+  <g filter="url(#shadow)">
+    <path d="M326 95 388 119v56c0 42-28 65-62 84-34-19-62-42-62-84v-56Z" fill="#190e1d" stroke="#ff4d91" stroke-width="3"/>
+    <path d="M326 114 370 130v43c0 29-19 47-44 62-25-15-44-33-44-62v-43Z" fill="#f90362" fill-opacity="0.15"/>
+    <path d="m307 174 14 14 26-31" fill="none" stroke="#ff8ebc" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M326 259v-37" stroke="#ff4d91" stroke-dasharray="4 6" stroke-width="2"/>
+  </g>
+  <!-- data chips -->
+  <g font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2">
+    <rect x="50" y="258" width="88" height="30" rx="6" fill="#10141b" stroke="#f90362" stroke-opacity="0.6"/><text x="66" y="277" fill="#ff95bd">STORAGE</text>
+    <rect x="523" y="222" width="104" height="30" rx="6" fill="#10141b" stroke="#5bb6ed" stroke-opacity="0.6"/><text x="540" y="241" fill="#93cfff">COMPUTE</text>
+    <rect x="240" y="505" width="181" height="35" rx="6" fill="#10141b" stroke="#f90362" stroke-opacity="0.45"/><text x="266" y="527" fill="#f8bbd1">CLOUD SECURITY</text>
+  </g>
+  <g fill="none" stroke="#ff4d91" stroke-width="1.5" opacity="0.5"><path d="M136 278 187 310"/><path d="M523 240 480 292"/><path d="M337 501v-30"/></g>
+</svg>
